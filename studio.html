@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio | My Art Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="mug-icon.jpeg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    
+</head>
+<body class="homepage-bg">
+    <!-- Navigation bar -->
+    <header>
+        <nav class="navbar container flex">
+            <h2 class="logo"> <a href="artist.html">DAVID-MUG-IRE.</a></h2>
+
+            <ul class="nav-links flex">
+                <li><a href="index.html">home</a></li>
+                <li><a href="artist.html">artist</a></li>
+                <li><a href="artwork.html">artwork</a></li>
+                <li><a href="studio.html">studio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <span id="menu-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+     </header>
+    <!-- Studio Section -->
+    <div class="container">
+        <h1><span>My </span>Studio</h1>
+        <p class="intro">Welcome to Studio MUGIRE, where African heritage meets contemporary artistry. Located in the heart of africa, the city of kigali,
+            "<a href="https://www.instagram.com/studio_mugire__?igsh=MTdjY2lhbzJrdndqMA==">@studio_mugire__</a>" our studio is a vibrant space where traditional and modern African art forms come to life. Here, each piece tells a story, celebrating the colors, textures, and rhythms of Africa in a dynamic blend of innovation and tradition.
+
+            Our studio invites you to explore a curated collection of works by talented African artists, each inspired by the continent’s rich history and diverse cultures. From captivating sculptures and bold canvases to intricate textiles, our space is designed for art lovers and newcomers alike, offering an immersive experience that goes beyond the visual.
+            
+            Step inside, and let our art guide you on a journey across Africa’s landscapes, heritage, and spirit. Whether you're seeking inspiration, looking to connect with local artists, or simply want to experience African art in an intimate setting, we welcome you to visit Studio MUGIRE . Discover the heart of African creativity—one piece at a time.</p>
+        <!-- Add space for studio images and videos -->
+        <div class="studio-media">
+            <img class="stud-img" src="stu (1).jpeg" alt="Studio Image 1">
+            <img class="stud-img"src="stu (3).jpeg" alt="Studio Image 2">
+            <img class="stud-img"src="stu (2).jpeg" alt="Studio Image 2">
+            <img class="stud-img"src="stu (4).jpeg" alt="Studio Image 2">
+            <img class="stud-img"src="stu (5).jpeg" alt="Studio Image 2">
+            <img class="stud-img"src="stu (6).jpeg" alt="Studio Image 2">
+            
+            <!-- Add more images and videos as needed -->
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <section id="contact"> 
+    <div class="contact-section">
+        <h1>Contact <span> Me</span> </h1>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="@david_mug_ire"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="mailto:mpeacedavid@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
+        </div>
+        <p class="contact-text">Thank you for exploring my creative world. As a mixed media artist, my work draws from a range of materials, textures, and inspirations to create pieces that invite reflection and connection. Whether you’re interested in acquiring artwork, discussing a potential collaboration, or simply want to share your thoughts, I’d love to hear from you. Art, after all, is about fostering connections and sparking conversation. Feel free to reach out with any questions or ideas you may have, or if you'd like to learn more about specific works. Your perspective enriches this journey, and I’m always open to engaging with fellow art enthusiasts, curators, collectors, and creatives. You can contact me directly through the form below or via email and social media. I look forward to connecting with you and exploring the possibilities together.</p>
+        <form action="mailto:mpeacedavid@gmail.com" method="post">
+            <label class="form-label" for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required> <br>
+            <label class="form-label"  for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name"> <br>
+            <label class="form-label"  for="email">Email</label>
+            <input type="email" id="email" name="email" required> <br>
+            <label class="form-label"  for="message">Message</label>
+            <textarea id="message" name="message" required></textarea> 
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+     <script>
+        const header = document.querySelector("header");
+        const menuBtn = document.querySelector("#menu-btn");
+        const CloseMenuBtn = document.querySelector("close-menu-btn");
+
+        //toggle mobile menu on menu btn click
+        menuBtn.addEventListener("click", () => {
+            header.classList.toggle("show-mobile-menu");
+        });
+ 
+        
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
